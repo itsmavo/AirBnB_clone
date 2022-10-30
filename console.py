@@ -7,6 +7,7 @@ from models import storage
 from shlex import split
 import shlex
 
+
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
     classes = {"BaseModel"}
@@ -149,7 +150,7 @@ class HBNBCommand(cmd.Cmd):
             key = strings[0] + " " + subArg[0]
             self.do_show(key)
         elif strings[2] == "destroy":
-            key = strings[0] + " "+ subArg[0]
+            key = strings[0] + " " + subArg[0]
             self.do_destroy(key)
         elif strings[2] == "update":
             newdict = self.dict_strip(line)
@@ -165,6 +166,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("*** Unknown syntax: {}".format(line))
             return
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

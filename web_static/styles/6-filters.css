@@ -57,6 +57,12 @@ button:hover {
     width: 70%;
 }
 
+.amenities > .h3h4 {
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 .wrapper {
     width: 100%;
     position: absolute;
